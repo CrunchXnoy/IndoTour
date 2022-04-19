@@ -40,8 +40,6 @@ public class mainView extends javax.swing.JFrame {
         jogjaPanel = new javax.swing.JPanel();
         baliPanel = new javax.swing.JPanel();
         homePanel = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -156,33 +154,15 @@ public class mainView extends javax.swing.JFrame {
 
         homePanel.setAutoscrolls(true);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/indoexplorer/indotour/icon/kota.jpg"))); // NOI18N
-
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
-        jLabel4.setText("Welcome To IndoTour");
-
         javax.swing.GroupLayout homePanelLayout = new javax.swing.GroupLayout(homePanel);
         homePanel.setLayout(homePanelLayout);
         homePanelLayout.setHorizontalGroup(
             homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(homePanelLayout.createSequentialGroup()
-                .addContainerGap(117, Short.MAX_VALUE)
-                .addGroup(homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, homePanelLayout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(130, 130, 130))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, homePanelLayout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addGap(418, 418, 418))))
+            .addGap(0, 1047, Short.MAX_VALUE)
         );
         homePanelLayout.setVerticalGroup(
             homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, homePanelLayout.createSequentialGroup()
-                .addContainerGap(25, Short.MAX_VALUE)
-                .addComponent(jLabel4)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 483, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38))
+            .addGap(0, 589, Short.MAX_VALUE)
         );
 
         mainPanel.add(homePanel, "card2");
@@ -264,8 +244,6 @@ public class mainView extends javax.swing.JFrame {
     private javax.swing.JLabel btnLogout;
     private javax.swing.JPanel homePanel;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jakartaPanel;
     private javax.swing.JPanel jogjaPanel;
     private javax.swing.JPanel mainPanel;
