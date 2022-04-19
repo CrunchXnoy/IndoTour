@@ -36,10 +36,12 @@ public class mainView extends javax.swing.JFrame {
         btnAbout = new javax.swing.JLabel();
         btnLogout = new javax.swing.JLabel();
         mainPanel = new javax.swing.JPanel();
-        homePanel = new javax.swing.JPanel();
         jakartaPanel = new javax.swing.JPanel();
         jogjaPanel = new javax.swing.JPanel();
         baliPanel = new javax.swing.JPanel();
+        homePanel = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -48,7 +50,7 @@ public class mainView extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/indoexplorer/indotour/icon/indonesia.png"))); // NOI18N
-        jLabel1.setText("Explore Indonesia");
+        jLabel1.setText("IndoTour");
 
         btnHome.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         btnHome.setForeground(new java.awt.Color(204, 204, 204));
@@ -113,28 +115,15 @@ public class mainView extends javax.swing.JFrame {
         mainPanel.setBackground(new java.awt.Color(255, 255, 255));
         mainPanel.setLayout(new java.awt.CardLayout());
 
-        javax.swing.GroupLayout homePanelLayout = new javax.swing.GroupLayout(homePanel);
-        homePanel.setLayout(homePanelLayout);
-        homePanelLayout.setHorizontalGroup(
-            homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        homePanelLayout.setVerticalGroup(
-            homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
-        );
-
-        mainPanel.add(homePanel, "card2");
-
         javax.swing.GroupLayout jakartaPanelLayout = new javax.swing.GroupLayout(jakartaPanel);
         jakartaPanel.setLayout(jakartaPanelLayout);
         jakartaPanelLayout.setHorizontalGroup(
             jakartaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 1047, Short.MAX_VALUE)
         );
         jakartaPanelLayout.setVerticalGroup(
             jakartaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
+            .addGap(0, 589, Short.MAX_VALUE)
         );
 
         mainPanel.add(jakartaPanel, "card3");
@@ -143,11 +132,11 @@ public class mainView extends javax.swing.JFrame {
         jogjaPanel.setLayout(jogjaPanelLayout);
         jogjaPanelLayout.setHorizontalGroup(
             jogjaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 1047, Short.MAX_VALUE)
         );
         jogjaPanelLayout.setVerticalGroup(
             jogjaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
+            .addGap(0, 589, Short.MAX_VALUE)
         );
 
         mainPanel.add(jogjaPanel, "card4");
@@ -156,14 +145,47 @@ public class mainView extends javax.swing.JFrame {
         baliPanel.setLayout(baliPanelLayout);
         baliPanelLayout.setHorizontalGroup(
             baliPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 1047, Short.MAX_VALUE)
         );
         baliPanelLayout.setVerticalGroup(
             baliPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 600, Short.MAX_VALUE)
+            .addGap(0, 589, Short.MAX_VALUE)
         );
 
         mainPanel.add(baliPanel, "card5");
+
+        homePanel.setAutoscrolls(true);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/indoexplorer/indotour/icon/kota.jpg"))); // NOI18N
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        jLabel4.setText("Welcome To IndoTour");
+
+        javax.swing.GroupLayout homePanelLayout = new javax.swing.GroupLayout(homePanel);
+        homePanel.setLayout(homePanelLayout);
+        homePanelLayout.setHorizontalGroup(
+            homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(homePanelLayout.createSequentialGroup()
+                .addContainerGap(117, Short.MAX_VALUE)
+                .addGroup(homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, homePanelLayout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(130, 130, 130))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, homePanelLayout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addGap(418, 418, 418))))
+        );
+        homePanelLayout.setVerticalGroup(
+            homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, homePanelLayout.createSequentialGroup()
+                .addContainerGap(25, Short.MAX_VALUE)
+                .addComponent(jLabel4)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 483, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38))
+        );
+
+        mainPanel.add(homePanel, "card2");
 
         javax.swing.GroupLayout bodyPanelLayout = new javax.swing.GroupLayout(bodyPanel);
         bodyPanel.setLayout(bodyPanelLayout);
@@ -172,8 +194,7 @@ public class mainView extends javax.swing.JFrame {
             .addGroup(bodyPanelLayout.createSequentialGroup()
                 .addComponent(menuPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
-                .addGap(694, 694, 694))
+                .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         bodyPanelLayout.setVerticalGroup(
             bodyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -185,11 +206,13 @@ public class mainView extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bodyPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(bodyPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bodyPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(bodyPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -241,6 +264,8 @@ public class mainView extends javax.swing.JFrame {
     private javax.swing.JLabel btnLogout;
     private javax.swing.JPanel homePanel;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jakartaPanel;
     private javax.swing.JPanel jogjaPanel;
     private javax.swing.JPanel mainPanel;
