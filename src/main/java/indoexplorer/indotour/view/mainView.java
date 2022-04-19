@@ -40,6 +40,8 @@ public class mainView extends javax.swing.JFrame {
         jogjaPanel = new javax.swing.JPanel();
         baliPanel = new javax.swing.JPanel();
         homePanel = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -117,11 +119,11 @@ public class mainView extends javax.swing.JFrame {
         jakartaPanel.setLayout(jakartaPanelLayout);
         jakartaPanelLayout.setHorizontalGroup(
             jakartaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1047, Short.MAX_VALUE)
+            .addGap(0, 875, Short.MAX_VALUE)
         );
         jakartaPanelLayout.setVerticalGroup(
             jakartaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 589, Short.MAX_VALUE)
+            .addGap(0, 769, Short.MAX_VALUE)
         );
 
         mainPanel.add(jakartaPanel, "card3");
@@ -130,11 +132,11 @@ public class mainView extends javax.swing.JFrame {
         jogjaPanel.setLayout(jogjaPanelLayout);
         jogjaPanelLayout.setHorizontalGroup(
             jogjaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1047, Short.MAX_VALUE)
+            .addGap(0, 875, Short.MAX_VALUE)
         );
         jogjaPanelLayout.setVerticalGroup(
             jogjaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 589, Short.MAX_VALUE)
+            .addGap(0, 769, Short.MAX_VALUE)
         );
 
         mainPanel.add(jogjaPanel, "card4");
@@ -143,26 +145,43 @@ public class mainView extends javax.swing.JFrame {
         baliPanel.setLayout(baliPanelLayout);
         baliPanelLayout.setHorizontalGroup(
             baliPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1047, Short.MAX_VALUE)
+            .addGap(0, 875, Short.MAX_VALUE)
         );
         baliPanelLayout.setVerticalGroup(
             baliPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 589, Short.MAX_VALUE)
+            .addGap(0, 769, Short.MAX_VALUE)
         );
 
         mainPanel.add(baliPanel, "card5");
 
         homePanel.setAutoscrolls(true);
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/indoexplorer/indotour/icon/kota.jpg"))); // NOI18N
+
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        jLabel3.setText("Welcome To IndoTour");
+
         javax.swing.GroupLayout homePanelLayout = new javax.swing.GroupLayout(homePanel);
         homePanel.setLayout(homePanelLayout);
         homePanelLayout.setHorizontalGroup(
             homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1047, Short.MAX_VALUE)
+            .addGroup(homePanelLayout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addComponent(jLabel2)
+                .addContainerGap(41, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, homePanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addGap(313, 313, 313))
         );
         homePanelLayout.setVerticalGroup(
             homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 589, Short.MAX_VALUE)
+            .addGroup(homePanelLayout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(jLabel3)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2)
+                .addContainerGap(150, Short.MAX_VALUE))
         );
 
         mainPanel.add(homePanel, "card2");
@@ -244,6 +263,8 @@ public class mainView extends javax.swing.JFrame {
     private javax.swing.JLabel btnLogout;
     private javax.swing.JPanel homePanel;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jakartaPanel;
     private javax.swing.JPanel jogjaPanel;
     private javax.swing.JPanel mainPanel;
