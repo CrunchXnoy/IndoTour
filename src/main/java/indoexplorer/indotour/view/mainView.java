@@ -159,7 +159,7 @@ public class mainView extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/indoexplorer/indotour/icon/kota.jpg"))); // NOI18N
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
-        jLabel4.setText("Welcome To IndoTour");
+        jLabel4.setText("Welcome To Indo Tour");
 
         javax.swing.GroupLayout homePanelLayout = new javax.swing.GroupLayout(homePanel);
         homePanel.setLayout(homePanelLayout);
