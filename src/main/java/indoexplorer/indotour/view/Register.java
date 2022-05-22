@@ -13,12 +13,12 @@ import javax.swing.JOptionPane;
  *
  * @author almer
  */
-public class Register1 extends javax.swing.JFrame {
+public class Register extends javax.swing.JFrame {
 
     /**
      * Creates new form Register
      */
-    public Register1() {
+    public Register() {
         initComponents();
     }
 

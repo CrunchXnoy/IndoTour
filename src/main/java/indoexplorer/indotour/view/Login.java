@@ -10,12 +10,12 @@ package indoexplorer.indotour.view;
  *
  * @author almer
  */
-public class Login1 extends javax.swing.JFrame {
+public class Login extends javax.swing.JFrame {
 
     /**
      * Creates new form Login
      */
-    public Login1() {
+    public Login() {
         initComponents();
     }
 

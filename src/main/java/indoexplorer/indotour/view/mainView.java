@@ -13,12 +13,12 @@ import javax.swing.JOptionPane;
  *
  * @author almer
  */
-public class mainView1 extends javax.swing.JFrame {
+public class mainView extends javax.swing.JFrame {
 
     /**
      * Creates new form mainView
      */
-    public mainView1() {
+    public mainView() {
         initComponents();
     }
 
