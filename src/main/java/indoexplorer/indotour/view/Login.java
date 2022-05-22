@@ -10,6 +10,7 @@ package indoexplorer.indotour.view;
  *
  * @author almer
  */
+
 public class Login extends javax.swing.JFrame {
 
     /**
