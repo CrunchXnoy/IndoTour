@@ -18,7 +18,7 @@ private String userid = "root";
 private String password = "";
 //silahkan digant url-nya, tapi tergantung nama databasenya
 //formatnya: “jdbc:tipeDatabase://server:port/namaDatabase”
-String url = "jdbc:mysql://localhost:3306/ngobar";
+String url = "jdbc:mysql://localhost:3306/saatnyaonline";
 
 public Connection con;
 
