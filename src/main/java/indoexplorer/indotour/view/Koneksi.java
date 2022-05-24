@@ -18,7 +18,7 @@ private String userid = "root";
 private String password = "";
 //silahkan digant url-nya, tapi tergantung nama databasenya
 //formatnya: “jdbc:tipeDatabase://server:port/namaDatabase”
-String url = "jdbc:mysql://localhost/saatnyaonline";
+String url = "jdbc:mysql://localhost:3306/saatnyaonline";
 
 public Connection con;
 
@@ -29,7 +29,7 @@ getConnection();
 
 public Connection getConnection(){
 try {
-Class.forName("com.mysql.jdbc.Driver");
+Class.forName("com.mysql.cj.jdbc.Driver");
 }
 catch (java.lang.ClassNotFoundException e){
 System.err.print("Koneksi dengan Datagase gagal: ");
