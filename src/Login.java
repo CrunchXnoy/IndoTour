@@ -1,4 +1,10 @@
 
+import javax.swing.JOptionPane;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import javax.swing.JOptionPane;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -12,12 +18,20 @@
  */
 
 public class Login extends javax.swing.JFrame {
-
+    Connection con;
+    Statement stat;
+    ResultSet rs;
+    String sql;
     /**
      * Creates new form Login
      */
     public Login() {
         initComponents();
+        //pemanggilan fungsi koneksi database yang sudah kita buat pada class koneksi.java
+        koneksi DB = new koneksi();
+        DB.config();
+        con = DB.con;
+        stat = DB.stm;
     }
 
     /**
@@ -55,7 +69,11 @@ public class Login extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
         jLabel5.setText("Password :");
 
-        passwordfield.setText("123");
+        passwordfield.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passwordfieldActionPerformed(evt);
+            }
+        });
 
         btnLogin.setBackground(new java.awt.Color(204, 204, 255));
         btnLogin.setFont(new java.awt.Font("Segoe UI Light", 0, 18)); // NOI18N
@@ -130,9 +148,22 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_usernamefieldActionPerformed
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-         dispose();
-         mainView m = new mainView();
-         m.setVisible(true);
+        try {
+                    sql = "SELECT * FROM user WHERE nama='"+usernamefield.getText()+"' AND password='"+passwordfield.getText()+"'";
+                    rs = stat.executeQuery(sql);
+                    if(rs.next()){
+                        if(usernamefield.getText().equals(rs.getString("nama")) && passwordfield.getText().equals(rs.getString("password"))){
+                            JOptionPane.showMessageDialog(null, "Login Berhasil");
+                            dispose();
+                            mainView m = new mainView();
+                            m.setVisible(true);
+                        }
+                    }else{
+                            JOptionPane.showMessageDialog(null, "username atau password salah");
+                        }
+                } catch (Exception e) {
+                    JOptionPane.showMessageDialog(this, e.getMessage());
+            }
     }//GEN-LAST:event_btnLoginActionPerformed
 
     private void btnSignUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSignUpActionPerformed
@@ -140,6 +171,10 @@ public class Login extends javax.swing.JFrame {
          Register r = new Register();
          r.setVisible(true);
     }//GEN-LAST:event_btnSignUpActionPerformed
+
+    private void passwordfieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordfieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_passwordfieldActionPerformed
 
     /**
      * @param args the command line arguments
