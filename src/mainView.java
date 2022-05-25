@@ -32,64 +32,64 @@ public class mainView extends javax.swing.JFrame {
     private void initComponents() {
 
         mainPanel = new javax.swing.JPanel();
-        jakartaPanel = new javax.swing.JPanel();
-        jogjaPanel = new javax.swing.JPanel();
-        baliPanel = new javax.swing.JPanel();
+        pesawatPanel = new javax.swing.JPanel();
+        keretaPanel = new javax.swing.JPanel();
+        hotelPanel = new javax.swing.JPanel();
         homePanel = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         menuPanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         btnHome = new javax.swing.JLabel();
-        btnJakarta = new javax.swing.JLabel();
-        btnJogja = new javax.swing.JLabel();
-        btnBali = new javax.swing.JLabel();
-        btnAbout = new javax.swing.JLabel();
+        btnPesawat = new javax.swing.JLabel();
+        btnKereta = new javax.swing.JLabel();
+        btnHotel = new javax.swing.JLabel();
+        btnBus = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         mainPanel.setBackground(new java.awt.Color(255, 255, 255));
         mainPanel.setLayout(new java.awt.CardLayout());
 
-        javax.swing.GroupLayout jakartaPanelLayout = new javax.swing.GroupLayout(jakartaPanel);
-        jakartaPanel.setLayout(jakartaPanelLayout);
-        jakartaPanelLayout.setHorizontalGroup(
-            jakartaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout pesawatPanelLayout = new javax.swing.GroupLayout(pesawatPanel);
+        pesawatPanel.setLayout(pesawatPanelLayout);
+        pesawatPanelLayout.setHorizontalGroup(
+            pesawatPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 659, Short.MAX_VALUE)
         );
-        jakartaPanelLayout.setVerticalGroup(
-            jakartaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        pesawatPanelLayout.setVerticalGroup(
+            pesawatPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 581, Short.MAX_VALUE)
         );
 
-        mainPanel.add(jakartaPanel, "card3");
+        mainPanel.add(pesawatPanel, "card3");
 
-        javax.swing.GroupLayout jogjaPanelLayout = new javax.swing.GroupLayout(jogjaPanel);
-        jogjaPanel.setLayout(jogjaPanelLayout);
-        jogjaPanelLayout.setHorizontalGroup(
-            jogjaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout keretaPanelLayout = new javax.swing.GroupLayout(keretaPanel);
+        keretaPanel.setLayout(keretaPanelLayout);
+        keretaPanelLayout.setHorizontalGroup(
+            keretaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 659, Short.MAX_VALUE)
         );
-        jogjaPanelLayout.setVerticalGroup(
-            jogjaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        keretaPanelLayout.setVerticalGroup(
+            keretaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 581, Short.MAX_VALUE)
         );
 
-        mainPanel.add(jogjaPanel, "card4");
+        mainPanel.add(keretaPanel, "card4");
 
-        javax.swing.GroupLayout baliPanelLayout = new javax.swing.GroupLayout(baliPanel);
-        baliPanel.setLayout(baliPanelLayout);
-        baliPanelLayout.setHorizontalGroup(
-            baliPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout hotelPanelLayout = new javax.swing.GroupLayout(hotelPanel);
+        hotelPanel.setLayout(hotelPanelLayout);
+        hotelPanelLayout.setHorizontalGroup(
+            hotelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 659, Short.MAX_VALUE)
         );
-        baliPanelLayout.setVerticalGroup(
-            baliPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        hotelPanelLayout.setVerticalGroup(
+            hotelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 581, Short.MAX_VALUE)
         );
 
-        mainPanel.add(baliPanel, "card5");
+        mainPanel.add(hotelPanel, "card5");
 
         homePanel.setAutoscrolls(true);
 
@@ -100,23 +100,17 @@ public class mainView extends javax.swing.JFrame {
         homePanel.setLayout(homePanelLayout);
         homePanelLayout.setHorizontalGroup(
             homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(homePanelLayout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addComponent(jLabel2)
-                .addContainerGap(625, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, homePanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(228, 228, 228)
                 .addComponent(jLabel3)
-                .addGap(313, 313, 313))
+                .addGap(211, 211, 211))
         );
         homePanelLayout.setVerticalGroup(
             homePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(homePanelLayout.createSequentialGroup()
-                .addGap(40, 40, 40)
+                .addGap(19, 19, 19)
                 .addComponent(jLabel3)
-                .addGap(87, 87, 87)
-                .addComponent(jLabel2)
-                .addContainerGap(425, Short.MAX_VALUE))
+                .addGap(533, 533, 533))
         );
 
         mainPanel.add(homePanel, "card2");
@@ -131,21 +125,21 @@ public class mainView extends javax.swing.JFrame {
         btnHome.setForeground(new java.awt.Color(204, 204, 204));
         btnHome.setText("Home");
 
-        btnJakarta.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
-        btnJakarta.setForeground(new java.awt.Color(204, 204, 204));
-        btnJakarta.setText("Pesawat");
+        btnPesawat.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        btnPesawat.setForeground(new java.awt.Color(204, 204, 204));
+        btnPesawat.setText("Pesawat");
 
-        btnJogja.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
-        btnJogja.setForeground(new java.awt.Color(204, 204, 204));
-        btnJogja.setText("Kereta Api");
+        btnKereta.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        btnKereta.setForeground(new java.awt.Color(204, 204, 204));
+        btnKereta.setText("Kereta Api");
 
-        btnBali.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
-        btnBali.setForeground(new java.awt.Color(204, 204, 204));
-        btnBali.setText("Hotel");
+        btnHotel.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        btnHotel.setForeground(new java.awt.Color(204, 204, 204));
+        btnHotel.setText("Hotel");
 
-        btnAbout.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
-        btnAbout.setForeground(new java.awt.Color(204, 204, 204));
-        btnAbout.setText("Bus");
+        btnBus.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        btnBus.setForeground(new java.awt.Color(204, 204, 204));
+        btnBus.setText("Bus");
 
         jButton1.setText("Logout");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -154,20 +148,31 @@ public class mainView extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setText("Account");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout menuPanelLayout = new javax.swing.GroupLayout(menuPanel);
         menuPanel.setLayout(menuPanelLayout);
         menuPanelLayout.setHorizontalGroup(
             menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(menuPanelLayout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1)
-                    .addComponent(btnAbout)
-                    .addComponent(btnJakarta)
-                    .addComponent(btnBali)
-                    .addComponent(btnJogja)
-                    .addComponent(btnHome)
-                    .addComponent(jLabel1))
+                .addGap(20, 20, 20)
+                .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(menuPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jButton1)
+                        .addComponent(btnBus)
+                        .addComponent(btnPesawat)
+                        .addComponent(btnHotel)
+                        .addComponent(btnKereta)
+                        .addComponent(btnHome)
+                        .addComponent(jLabel1))
+                    .addGroup(menuPanelLayout.createSequentialGroup()
+                        .addComponent(jButton2)
+                        .addGap(25, 25, 25)))
                 .addContainerGap(69, Short.MAX_VALUE))
         );
         menuPanelLayout.setVerticalGroup(
@@ -178,14 +183,16 @@ public class mainView extends javax.swing.JFrame {
                 .addGap(35, 35, 35)
                 .addComponent(btnHome)
                 .addGap(36, 36, 36)
-                .addComponent(btnJakarta)
+                .addComponent(btnPesawat)
                 .addGap(36, 36, 36)
-                .addComponent(btnJogja)
+                .addComponent(btnKereta)
                 .addGap(37, 37, 37)
-                .addComponent(btnBali)
+                .addComponent(btnHotel)
                 .addGap(39, 39, 39)
-                .addComponent(btnAbout)
+                .addComponent(btnBus)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton2)
+                .addGap(18, 18, 18)
                 .addComponent(jButton1)
                 .addGap(44, 44, 44))
         );
@@ -214,6 +221,13 @@ public class mainView extends javax.swing.JFrame {
                 n.setVisible(true);        
                 JOptionPane.showMessageDialog(null, "Logout Berhasil");
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        dispose();
+        mainView n = new mainView();
+        n.setVisible(true);
+        JOptionPane.showMessageDialog(null,"Ini akun");
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -252,20 +266,20 @@ public class mainView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel baliPanel;
-    private javax.swing.JLabel btnAbout;
-    private javax.swing.JLabel btnBali;
+    private javax.swing.JLabel btnBus;
     private javax.swing.JLabel btnHome;
-    private javax.swing.JLabel btnJakarta;
-    private javax.swing.JLabel btnJogja;
+    private javax.swing.JLabel btnHotel;
+    private javax.swing.JLabel btnKereta;
+    private javax.swing.JLabel btnPesawat;
     private javax.swing.JPanel homePanel;
+    private javax.swing.JPanel hotelPanel;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JPanel jakartaPanel;
-    private javax.swing.JPanel jogjaPanel;
+    private javax.swing.JPanel keretaPanel;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JPanel menuPanel;
+    private javax.swing.JPanel pesawatPanel;
     // End of variables declaration//GEN-END:variables
 }
