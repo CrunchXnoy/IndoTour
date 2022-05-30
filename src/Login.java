@@ -59,7 +59,7 @@ public class Login extends javax.swing.JFrame {
         jLabel2.setText("Indo Tour");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel3.setText("Username/Email :");
+        jLabel3.setText("Email :");
 
         usernamefield.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -151,10 +151,10 @@ public class Login extends javax.swing.JFrame {
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
         try {
-                    sql = "SELECT * FROM user WHERE nama='"+usernamefield.getText()+"' AND password='"+passwordfield.getText()+"'";
+                    sql = "SELECT * FROM user WHERE email='"+usernamefield.getText()+"' AND password='"+passwordfield.getText()+"'";
                     rs = stat.executeQuery(sql);
                     if(rs.next()){
-                        if(usernamefield.getText().equals(rs.getString("nama")) && passwordfield.getText().equals(rs.getString("password"))){
+                        if(usernamefield.getText().equals(rs.getString("email")) && passwordfield.getText().equals(rs.getString("password"))){
                             JOptionPane.showMessageDialog(null, "Login Berhasil");
                             dispose();
                             mainView m = new mainView();

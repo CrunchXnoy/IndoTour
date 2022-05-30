@@ -295,7 +295,7 @@ private static Connection mysqlconfig;
 
     private void btnRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterActionPerformed
             try {
-                String sql = "INSERT INTO user VALUES (NULL,'"+emailfield.getText()+"','"+namefield.getText()+"','"+passwordfield.getText()+"','"+usernamefield.getText()+"','10000')";
+                String sql = "INSERT INTO user VALUES (NULL,'"+emailfield.getText()+"','"+passwordfield.getText()+"','"+namefield.getText()+"','"+usernamefield.getText()+"','10000')";
                 java.sql.Connection conn=(Connection)Register.configDB();
                 java.sql.PreparedStatement pst=conn.prepareStatement(sql);
                 pst.execute();
