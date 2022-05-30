@@ -33,10 +33,15 @@ public class mainView extends javax.swing.JFrame {
 
         mainPanel = new javax.swing.JPanel();
         pesawatPanel = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
         keretaPanel = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
         hotelPanel = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
         homePanel = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
+        busPanel = new javax.swing.JPanel();
+        akunPanel = new javax.swing.JPanel();
         menuPanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         btnHome = new javax.swing.JLabel();
@@ -52,41 +57,66 @@ public class mainView extends javax.swing.JFrame {
         mainPanel.setBackground(new java.awt.Color(255, 255, 255));
         mainPanel.setLayout(new java.awt.CardLayout());
 
+        jLabel2.setText("INI ADALAH PANEL PESAWAT");
+
         javax.swing.GroupLayout pesawatPanelLayout = new javax.swing.GroupLayout(pesawatPanel);
         pesawatPanel.setLayout(pesawatPanelLayout);
         pesawatPanelLayout.setHorizontalGroup(
             pesawatPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 659, Short.MAX_VALUE)
+            .addGroup(pesawatPanelLayout.createSequentialGroup()
+                .addGap(181, 181, 181)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(270, Short.MAX_VALUE))
         );
         pesawatPanelLayout.setVerticalGroup(
             pesawatPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 581, Short.MAX_VALUE)
+            .addGroup(pesawatPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(533, Short.MAX_VALUE))
         );
 
         mainPanel.add(pesawatPanel, "card3");
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/indonesia.png"))); // NOI18N
+        jLabel4.setText("INI ADALAH PANEL KERETA");
 
         javax.swing.GroupLayout keretaPanelLayout = new javax.swing.GroupLayout(keretaPanel);
         keretaPanel.setLayout(keretaPanelLayout);
         keretaPanelLayout.setHorizontalGroup(
             keretaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 659, Short.MAX_VALUE)
+            .addGroup(keretaPanelLayout.createSequentialGroup()
+                .addGap(181, 181, 181)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(270, Short.MAX_VALUE))
         );
         keretaPanelLayout.setVerticalGroup(
             keretaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 581, Short.MAX_VALUE)
+            .addGroup(keretaPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(533, Short.MAX_VALUE))
         );
 
         mainPanel.add(keretaPanel, "card4");
+
+        jLabel5.setText("INI ADALAH PANEL HOTEL");
 
         javax.swing.GroupLayout hotelPanelLayout = new javax.swing.GroupLayout(hotelPanel);
         hotelPanel.setLayout(hotelPanelLayout);
         hotelPanelLayout.setHorizontalGroup(
             hotelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 659, Short.MAX_VALUE)
+            .addGroup(hotelPanelLayout.createSequentialGroup()
+                .addGap(181, 181, 181)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(270, Short.MAX_VALUE))
         );
         hotelPanelLayout.setVerticalGroup(
             hotelPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 581, Short.MAX_VALUE)
+            .addGroup(hotelPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(533, Short.MAX_VALUE))
         );
 
         mainPanel.add(hotelPanel, "card5");
@@ -115,6 +145,32 @@ public class mainView extends javax.swing.JFrame {
 
         mainPanel.add(homePanel, "card2");
 
+        javax.swing.GroupLayout busPanelLayout = new javax.swing.GroupLayout(busPanel);
+        busPanel.setLayout(busPanelLayout);
+        busPanelLayout.setHorizontalGroup(
+            busPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 659, Short.MAX_VALUE)
+        );
+        busPanelLayout.setVerticalGroup(
+            busPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 581, Short.MAX_VALUE)
+        );
+
+        mainPanel.add(busPanel, "card6");
+
+        javax.swing.GroupLayout akunPanelLayout = new javax.swing.GroupLayout(akunPanel);
+        akunPanel.setLayout(akunPanelLayout);
+        akunPanelLayout.setHorizontalGroup(
+            akunPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 659, Short.MAX_VALUE)
+        );
+        akunPanelLayout.setVerticalGroup(
+            akunPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 581, Short.MAX_VALUE)
+        );
+
+        mainPanel.add(akunPanel, "card7");
+
         menuPanel.setBackground(new java.awt.Color(47, 54, 64));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -124,22 +180,47 @@ public class mainView extends javax.swing.JFrame {
         btnHome.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         btnHome.setForeground(new java.awt.Color(204, 204, 204));
         btnHome.setText("Home");
+        btnHome.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnHomeMouseClicked(evt);
+            }
+        });
 
         btnPesawat.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         btnPesawat.setForeground(new java.awt.Color(204, 204, 204));
         btnPesawat.setText("Pesawat");
+        btnPesawat.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnPesawatMouseClicked(evt);
+            }
+        });
 
         btnKereta.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         btnKereta.setForeground(new java.awt.Color(204, 204, 204));
         btnKereta.setText("Kereta Api");
+        btnKereta.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnKeretaMouseClicked(evt);
+            }
+        });
 
         btnHotel.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         btnHotel.setForeground(new java.awt.Color(204, 204, 204));
         btnHotel.setText("Hotel");
+        btnHotel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnHotelMouseClicked(evt);
+            }
+        });
 
         btnBus.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         btnBus.setForeground(new java.awt.Color(204, 204, 204));
         btnBus.setText("Bus");
+        btnBus.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnBusMouseClicked(evt);
+            }
+        });
 
         jButton1.setText("Logout");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -213,6 +294,7 @@ public class mainView extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -228,6 +310,61 @@ public class mainView extends javax.swing.JFrame {
         n.setVisible(true);
         JOptionPane.showMessageDialog(null,"Ini akun");
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void btnHomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseClicked
+        mainPanel.removeAll();
+        mainPanel.repaint();
+        mainPanel.revalidate();
+        
+          //add panel
+        mainPanel.add(homePanel);
+        mainPanel.repaint();
+        mainPanel.revalidate();
+    }//GEN-LAST:event_btnHomeMouseClicked
+
+    private void btnPesawatMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPesawatMouseClicked
+        mainPanel.removeAll();
+        mainPanel.repaint();
+        mainPanel.revalidate();
+        
+          //add panel
+        mainPanel.add(pesawatPanel);
+        mainPanel.repaint();
+        mainPanel.revalidate();
+    }//GEN-LAST:event_btnPesawatMouseClicked
+
+    private void btnKeretaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnKeretaMouseClicked
+        mainPanel.removeAll();
+        mainPanel.repaint();
+        mainPanel.revalidate();
+        
+          //add panel
+        mainPanel.add(keretaPanel);
+        mainPanel.repaint();
+        mainPanel.revalidate();
+    }//GEN-LAST:event_btnKeretaMouseClicked
+
+    private void btnHotelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHotelMouseClicked
+        mainPanel.removeAll();
+        mainPanel.repaint();
+        mainPanel.revalidate();
+        
+          //add panel
+        mainPanel.add(hotelPanel);
+        mainPanel.repaint();
+        mainPanel.revalidate();
+    }//GEN-LAST:event_btnHotelMouseClicked
+
+    private void btnBusMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnBusMouseClicked
+         mainPanel.removeAll();
+        mainPanel.repaint();
+        mainPanel.revalidate();
+        
+          //add panel
+        mainPanel.add(busPanel);
+        mainPanel.repaint();
+        mainPanel.revalidate();
+    }//GEN-LAST:event_btnBusMouseClicked
 
     /**
      * @param args the command line arguments
@@ -266,17 +403,22 @@ public class mainView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel akunPanel;
     private javax.swing.JLabel btnBus;
     private javax.swing.JLabel btnHome;
     private javax.swing.JLabel btnHotel;
     private javax.swing.JLabel btnKereta;
     private javax.swing.JLabel btnPesawat;
+    private javax.swing.JPanel busPanel;
     private javax.swing.JPanel homePanel;
     private javax.swing.JPanel hotelPanel;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel keretaPanel;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JPanel menuPanel;
